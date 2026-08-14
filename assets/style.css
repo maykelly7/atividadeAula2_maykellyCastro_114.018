@@ -1,0 +1,166 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #111;
+    line-height: 1.6;
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: white;
+    font-size: 32px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Conteúdo principal */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 25px;
+    margin: 30px 0 15px;
+}
+
+section p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+
+/* Início */
+#inicio {
+    background-color: #f2f2f2;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+#inicio img {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+
+/* Produtos */
+#produtos ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+#produtos li {
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+/* Sobre */
+#sobre {
+    background-color: #111;
+    color: white;
+}
+
+
+/* Contato */
+#contato {
+    background-color: #f2f2f2;
+}
+
+#contato a {
+    color: #111;
+    font-weight: bold;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    #inicio h2 {
+        font-size: 40px;
+    }
+}
